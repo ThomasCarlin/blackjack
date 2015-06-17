@@ -1,0 +1,9 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+<h1><%=current_user.email%></h1>
+<h2><%=current_user.encrypted_password%></h2>
+<h2><%=@deck.cards.length%></h2>
+<% @deck.cards.each do |card| %>
+<p><%= card.name %> <%=card.value %></p>
+<% end %>
+<p><%= @player_hand.value %></p>

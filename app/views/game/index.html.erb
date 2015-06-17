@@ -1,0 +1,6 @@
+<h1><%= @deck.length %> </h1>
+<h2> <%= @player %> </h2>
+<% @player_hand.cards.each do |card| %>
+	<p><%=card %></p>
+<% end %>
+<p> <%=@player_hand.value %></p>
